@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>מילון מושגים - מודל AI</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f9f9f9; padding: 20px; }
+        .container { max-width: 800px; margin: auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        h1 { color: #2c3e50; text-align: center; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+        .term { background: #ecf0f1; padding: 10px; border-right: 4px solid #3498db; border-radius: 4px; }
+        .term strong { color: #2980b9; }
+        a { display: block; text-align: center; margin-bottom: 20px; color: #3498db; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html">חזור לעמוד המודל</a>
+        <h1>מילון מושגים ברשתות נוירונים (40 מונחים)</h1>
+        <div class="grid">
+            <div class="term"><strong>1. AI (בינה מלאכותית)</strong> - תחום במדעי המחשב העוסק ביצירת מכונות המסוגלות לבצע משימות הדורשות אינטליגנציה אנושית.</div>
+            <div class="term"><strong>2. CNN (רשת קונבולוציה)</strong> - רשת נוירונים המיועדת בעיקר לעיבוד וזיהוי תמונות.</div>
+            <div class="term"><strong>3. Neuron (נוירון)</strong> - יחידת החישוב הבסיסית ברשת, המקבלת קלט, מכפילה במשקלים ופולטת פלט.</div>
+            <div class="term"><strong>4. Weights (משקלים)</strong> - פרמטרים נלמדים ברשת הקובעים את עוצמת הקשר בין נוירונים.</div>
+            <div class="term"><strong>5. Bias (הטיה)</strong> - ערך קבוע המתווסף לחישוב הנוירון ומאפשר גמישות בפונקציית האקטיבציה.</div>
+            <div class="term"><strong>6. Forward Pass</strong> - תהליך העברת המידע קדימה מהקלט ועד לקבלת הניבוי הסופי.</div>
+            <div class="term"><strong>7. Backpropagation</strong> - אלגוריתם ה"הפצה לאחור", המחשב את שגיאת המודל ומתקן את המשקלים כדי לשפר את הביצועים.</div>
+            <div class="term"><strong>8. Epoch (מחזור אימון)</strong> - מעבר אחד שלם של המודל על כל סט נתוני האימון.</div>
+            <div class="term"><strong>9. Learning Rate (קצב למידה)</strong> - גודל הצעד שהמודל לוקח בעת עדכון המשקלים בכל איטרציה.</div>
+            <div class="term"><strong>10. Loss (שגיאה)</strong> - פונקציה המודדת את הפער בין הניבוי של הרשת לבין התשובה הנכונה.</div>
+            <div class="term"><strong>11. Overfitting (התאמת יתר)</strong> - מצב בו המודל לומד "בעל פה" את נתוני האימון ונכשל על נתונים חדשים.</div>
+            <div class="term"><strong>12. Underfitting</strong> - מצב בו המודל פשוט מדי ולא מצליח ללמוד את התבניות בנתונים.</div>
+            <div class="term"><strong>13. Convolution (קונבולוציה)</strong> - פעולה מתמטית המחלצת מאפיינים מהתמונה באמצעות החלקת פילטר.</div>
+            <div class="term"><strong>14. Filter / Kernel (פילטר)</strong> - מטריצת מספרים קטנה העוברת על התמונה לזיהוי מאפיינים כמו קווים וזוויות.</div>
+            <div class="term"><strong>15. Feature Map</strong> - פלט של שכבת הקונבולוציה, המייצג את המאפיינים שזוהו בתמונה.</div>
+            <div class="term"><strong>16. Pooling (פולינג)</strong> - פעולת צמצום ממדים השומרת רק על המידע החשוב ביותר.</div>
+            <div class="term"><strong>17. Max Pooling</strong> - סוג של פולינג הבוחר את הערך המקסימלי מכל אזור בתמונה.</div>
+            <div class="term"><strong>18. ReLU (Rectified Linear Unit)</strong> - פונקציית אקטיבציה המאפסת ערכים שליליים ומשאירה חיוביים כפי שהם.</div>
+            <div class="term"><strong>19. Softmax</strong> - פונקציה הממירה את פלטי השכבה האחרונה להסתברויות (בין 0 ל-1, סכום 1).</div>
+            <div class="term"><strong>20. Dense Layer / Fully Connected</strong> - שכבה שבה כל נוירון מחובר לכל הנוירונים בשכבה הקודמת.</div>
+            <div class="term"><strong>21. Flatten (השטחה)</strong> - המרת מטריצה רב-ממדית (תמונה) למערך חד-ממדי.</div>
+            <div class="term"><strong>22. Gradient (גרדיאנט)</strong> - וקטור הנגזרות המצביע על כיוון העלייה התלול ביותר של פונקציית השגיאה.</div>
+            <div class="term"><strong>23. Gradient Descent (מורד הגרדיאנט)</strong> - אלגוריתם אופטימיזציה למזעור פונקציית השגיאה על ידי הליכה נגד הגרדיאנט.</div>
+            <div class="term"><strong>24. Batch (אצווה)</strong> - קבוצת דוגמאות אימון המועברות יחד במודל לפני עדכון המשקלים.</div>
+            <div class="term"><strong>25. Accuracy (דיוק)</strong> - מדד המייצג את אחוז הניבויים הנכונים של המודל מסך כל הניבויים.</div>
+            <div class="term"><strong>26. Classification (סיווג)</strong> - משימה של שיוך קלט לאחת ממספר קטגוריות מוגדרות מראש.</div>
+            <div class="term"><strong>27. Supervised Learning (למידה מונחית)</strong> - אימון מודל בעזרת דוגמאות מתויגות מראש (קלט ותשובה נכונה).</div>
+            <div class="term"><strong>28. LocalStorage</strong> - זיכרון מקומי בדפדפן המשמש כאן לשמירת משקלי המודל.</div>
+            <div class="term"><strong>29. Activation Function (פונקציית אקטיבציה)</strong> - פונקציה מתמטית הקובעת אם וכמה נוירון "יידלק" ויועבר הלאה.</div>
+            <div class="term"><strong>30. Input Layer (שכבת קלט)</strong> - השכבה הראשונה ברשת המקבלת את הנתונים הגולמיים.</div>
+            <div class="term"><strong>31. Output Layer (שכבת פלט)</strong> - השכבה האחרונה שמספקת את תוצאת המודל.</div>
+            <div class="term"><strong>32. Hidden Layer (שכבה נסתרת)</strong> - כל שכבה ברשת הנמצאת בין הקלט לפלט.</div>
+            <div class="term"><strong>33. Cross-Entropy Loss</strong> - פונקציית שגיאה נפוצה למשימות סיווג, המודדת הבדלים בין הסתברויות.</div>
+            <div class="term"><strong>34. Stride (צעד)</strong> - מספר הפיקסלים שבהם הפילטר זז בכל פעם על פני התמונה.</div>
+            <div class="term"><strong>35. Padding (ריפוד)</strong> - הוספת שוליים לתמונה (לרוב אפסים) כדי לשמור על גודלה לאחר קונבולוציה.</div>
+            <div class="term"><strong>36. Vanilla JavaScript</strong> - כתיבת קוד JS טהור ללא שימוש בספריות או פריימוורקים חיצונים (כמו בתרגיל זה).</div>
+            <div class="term"><strong>37. Canvas API</strong> - ממשק בדפדפן המאפשר ציור ועיבוד גרפיקה של פיקסלים בזמן אמת.</div>
+            <div class="term"><strong>38. Normalization (נרמול)</strong> - שינוי קנה המידה של נתונים (למשל פיקסלים מ-0-255 ל-0-1) להאצת הלמידה.</div>
+            <div class="term"><strong>39. One-Hot Encoding</strong> - ייצוג קטגוריות כוקטור של אפסים ו-1 בודד (למשל: [0,1,0] לריבוע).</div>
+            <div class="term"><strong>40. Hyperparameters</strong> - הגדרות שהמתכנת בוחר לפני האימון (קצב למידה, גודל פילטר, epochs).</div>
+        </div>
+    </div>
+</body>
+</html>

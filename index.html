@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>זיהוי צורות - CNN מהיסוד</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>מודל זיהוי צורות (CNN) ב-JavaScript טהור</h1>
+            <nav>
+                <a href="index.html" class="active">עמוד המודל</a> | 
+                <a href="dictionary.html">מילון מושגים AI</a>
+            </nav>
+        </header>
+
+        <main class="main-content">
+            <section class="controls-panel">
+                <h2>בקרת המודל</h2>
+                <div class="control-group">
+                    <label for="epochs">מחזורי אימון (Epochs):</label>
+                    <input type="number" id="epochs" value="10" min="1">
+                </div>
+                <div class="control-group">
+                    <label for="learningRate">קצב למידה (Learning Rate):</label>
+                    <input type="number" id="learningRate" value="0.05" step="0.01" min="0.001">
+                </div>
+                <div class="control-group">
+                    <label for="numFilters">מספר פילטרים (Filters):</label>
+                    <input type="number" id="numFilters" value="4" min="1">
+                </div>
+                <div class="control-group">
+                    <label for="filterSize">גודל פילטר (Filter Size):</label>
+                    <input type="number" id="filterSize" value="3" min="2" max="5">
+                </div>
+                
+                <div class="buttons-group">
+                    <button id="btnTrain" class="btn btn-train">אמן מודל (Train)</button>
+                    <button id="btnPredict" class="btn btn-predict">זהה צורה (Predict)</button>
+                    <button id="btnReset" class="btn btn-reset">אתחל מודל</button>
+                </div>
+                <div id="statusUpdate" class="status-box">ממתין לפעולה...</div>
+                
+                <div class="data-stats">
+                    <p>דוגמאות שנאספו לאימון: <span id="dataCount">0</span></p>
+                </div>
+            </section>
+
+            <section class="canvas-panel">
+                <h2>לוח ציור לאיסוף נתונים וזיהוי</h2>
+                <div class="canvas-container">
+                    <canvas id="paintCanvas" width="280" height="280"></canvas>
+                </div>
+                <div class="canvas-buttons">
+                    <button id="btnClearCanvas" class="btn">נקה לוח</button>
+                </div>
+                
+                <div class="add-data-group">
+                    <h4>הוסף את הציור למאגר האימון כ:</h4>
+                    <button onclick="addTrainingData(0)" class="btn btn-data">עיגול</button>
+                    <button onclick="addTrainingData(1)" class="btn btn-data">ריבוע</button>
+                    <button onclick="addTrainingData(2)" class="btn btn-data">משולש</button>
+                </div>
+                
+                <div id="predictionResult" class="result-box">
+                    <h3>תוצאת הזיהוי:</h3>
+                    <p class="result-text">-</p>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="cnn.js"></script>
+</body>
+</html>
