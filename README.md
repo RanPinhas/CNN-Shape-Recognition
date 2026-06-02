@@ -4,7 +4,6 @@
 
 ## Submitted by (Afeka College of Engineering)
 * **Ran Pinhas**
-* **Amit Segev**
 
 ---
 
